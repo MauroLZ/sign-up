@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Norse-Bold'; /* Give your font a name that you will use later */
+  src: url('Norse.woff') format('woff'); /* Adjust the path based on your font location */
+  /* Add more src lines for other font formats if needed (e.g., .woff2, .ttf, .eot) */
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.left-section {
+	background-color: antiquewhite;
+	width: 34vw;
+	height: 100vh;
+	color: black;
+	position: relative;
+	background-image: url("https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.hero {
+  position: absolute; /* Add absolute positioning to position .hero relative to .left-section */
+  top: 25%; /* Adjust the percentage as needed (30% to start 30% below the top) */
+  height: 18%; /* Set the desired height of .hero (20% of .left-section's height) */
+  width: 100%;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+	height: 80%;
+}
+
+.logo img {
+	max-height: 100%;
+	width: auto;
+}
+
+.name {
+	color: white;
+	font-family: 'Norse-Bold', sans-serif; /* Use the custom font you defined */
+  	font-size: 75px; /* Set the desired font size */
+  	color: white; /* Set the desired text color */
+}
+
+.right-section {
+	background-color: lightgray;
+	width: 66vw;
+	height: 100vh;
+	color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+.upper-text {
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 17px;
+	justify-content: center;
+	margin: 100px 100px 50px 50px;
+}
+
+.main-form {
+	background-color: white;
+	height: 40%;
+	box-shadow: 0px 5px 5px gray;
+	padding: 20px 20px 20px 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-form p {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	margin-bottom: 20px;
+
+}
+
+.name-section {
+	display: flex;
+	flex-direction: row;
+}
+
+.first_name, .last_name, .email_section {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	margin: 0 30px 20px 0;
+}
+
+.lower-section {
+	margin-top: 20px;
+}
+
