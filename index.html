@@ -33,20 +33,33 @@
             <div class="name-section">
                 <div class="first_name">
                     <label for="first-name">FIRST NAME:</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Stupid">
+                    <input type="text" name="first-name" id="first-name" placeholder="John" required>
                 </div>
                 <div class="last_name">
                     <label for="last-name">LAST NAME:</label>
-                    <input type="text" name="last-name" id="last" placeholder="Cunt">
+                    <input type="text" name="last-name" id="last" placeholder="Johnson" required>
                 </div>
             </div>
             <div class="info-section">
                 <div class="email_section">
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" placeholder="obama@hotwheels.com">
+                    <input type="email" name="email" placeholder=john182@gmail.com" required>
+                </div>
+                <div class="number_section">
+					<label for="phone">PHONE NUMBER</label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="686 280 1824" required>
                 </div>
             </div>
-            <div class="password-section"></div>
+            <div class="password-section">
+            	<div class="enter_password">
+            		<label for="password">PASSWORD</label>
+            		<input type="password" name="password" id="password">
+            	</div>
+            	<div class="confirm_password">
+            		<label for="confirm">CONFIRM PASSWORD</label>
+            		<input type="password" name="confirm" id="confirm">
+            	</div>
+            </div>
             <form></form>
         </div>
         <div class="lower-section">
