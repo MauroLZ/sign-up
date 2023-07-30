@@ -1,7 +1,6 @@
 @font-face {
-  font-family: 'Norse-Bold'; /* Give your font a name that you will use later */
-  src: url('Norse.woff') format('woff'); /* Adjust the path based on your font location */
-  /* Add more src lines for other font formats if needed (e.g., .woff2, .ttf, .eot) */
+  font-family: 'Norse-Bold';
+  src: url('Norse.woff') format('woff');
 }
 
 .container {
@@ -13,7 +12,7 @@
 
 .left-section {
 	background-color: antiquewhite;
-	width: 34vw;
+	width: 40vw;
 	height: 100vh;
 	color: black;
 	position: relative;
@@ -44,12 +43,11 @@
 	color: white;
 	font-family: 'Norse-Bold', sans-serif; /* Use the custom font you defined */
   	font-size: 75px; /* Set the desired font size */
-  	color: white; /* Set the desired text color */
 }
 
 .right-section {
 	background-color: lightgray;
-	width: 66vw;
+	width: 60vw;
 	height: 100vh;
 	color: black;
 	display: flex;
@@ -60,15 +58,15 @@
 	display: flex;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	font-size: 17px;
+	font-size: 40px;
 	justify-content: center;
-	margin: 100px 100px 50px 50px;
+	margin: 100px 15vh 80px 60px;
 }
 
 .main-form {
 	background-color: white;
 	height: 40%;
-	box-shadow: 0px 5px 5px gray;
+	box-shadow: 0 5px 5px gray;
 	padding: 20px 20px 20px 40px;
 	display: flex;
 	flex-direction: column;
@@ -78,9 +76,8 @@
 	color: black;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	font-size: 22px;
-	margin-bottom: 20px;
-
+	font-size: 40px;
+	margin: 0 0 50px 20px;
 }
 
 .name-section {
@@ -91,14 +88,61 @@
 .first_name, .last_name, .email_section {
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+	width: 30%;
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	font-size: 25px;
 	font-weight: 500;
-	margin: 0 30px 20px 0;
+	margin: 0 30px 30px 20px;
+}
+
+label {
+	color: dimgray;
+}
+
+input[type=text], input[type=email] {
+	margin-top: 10px;
+	height: 30px;
+	border: 2px solid lightgray;
+	border-radius: 5px;
+	font-size: 25px;
+	padding: 5px;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+	outline: none;
+	border: 3px solid darkolivegreen;
 }
 
 .lower-section {
 	margin-top: 20px;
+}
+
+.lower-section p {
+	color: black;
+	font-size: 25px;
+	margin: 30px 0 0 60px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.lower-section a {
+	color: darkolivegreen;
+	text-decoration: none;
+}
+
+.lower-section a:hover {
+	text-decoration: underline;
+}
+
+#sign-in {
+	color: white;
+	background-color: darkolivegreen;
+	padding: 20px 65px;
+	border-radius: 10px;
+	margin: 20px 0 0 60px;
+	font-size: 20px;
+}
+
+#sign-in:hover {
+	cursor: pointer;
 }
 
