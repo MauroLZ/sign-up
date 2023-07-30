@@ -17,6 +17,8 @@
 	color: black;
 	position: relative;
 	background-image: url("https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .hero {
@@ -80,12 +82,12 @@
 	margin: 0 0 50px 20px;
 }
 
-.name-section {
+.name-section, .info-section, .password-section {
 	display: flex;
 	flex-direction: row;
 }
 
-.first_name, .last_name, .email_section {
+.first_name, .last_name, .email_section, .number_section, .enter_password, .confirm_password {
 	display: flex;
 	flex-direction: column;
 	width: 30%;
@@ -99,7 +101,7 @@ label {
 	color: dimgray;
 }
 
-input[type=text], input[type=email] {
+input[type=text], input[type=email], input[type=tel], input[type=password] {
 	margin-top: 10px;
 	height: 30px;
 	border: 2px solid lightgray;
@@ -108,9 +110,17 @@ input[type=text], input[type=email] {
 	padding: 5px;
 }
 
-input[type=text]:focus, input[type=email]:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
 	outline: none;
 	border: 3px solid darkolivegreen;
+}
+
+label {
+	color: darkolivegreen;
+}
+
+.confirm_password label {
+	white-space: nowrap;
 }
 
 .lower-section {
@@ -140,9 +150,12 @@ input[type=text]:focus, input[type=email]:focus {
 	border-radius: 10px;
 	margin: 20px 0 0 60px;
 	font-size: 20px;
+	transition: transform 0.4s ease;
 }
 
 #sign-in:hover {
 	cursor: pointer;
+	transform: translateY(-7px);
 }
+
 
